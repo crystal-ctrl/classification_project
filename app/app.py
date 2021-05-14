@@ -65,10 +65,10 @@ def predict():
     result = model.predict(input_variables)
 
     if int(result)==1:
-        prediction = 'Your campaign will succeed!'
+        prediction = 'succeed!'
         suggestion = 'Give yourself a pat on the back!'
     else:
-        prediction = 'Your campaign will not succeed :( '
+        prediction = 'not succeed :( '
         suggestion = 'Please contact us to see how you can boost your chances!'
     return render_template("result.html", prediction=prediction, suggestion=suggestion)
 
